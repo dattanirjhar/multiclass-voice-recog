@@ -85,15 +85,15 @@ This repository hosts a multiclass voice recognition project, enabling the class
 
 The project requires a structured dataset with audio samples organized into categories. Each category should have its own directory containing the corresponding audio files.
 
-dataset/
-├──category1/
-│ ├── sample1.wav
-│ ├── sample2.wav
-│ └── ...
-├── category2/
-│ ├── sample1.wav
-│ ├── sample2.wav
-│ └── ...
+dataset/\
+├──category1/\
+│ ├── sample1.wav\
+│ ├── sample2.wav\
+│ └── ...\
+├── category2/\
+│ ├── sample1.wav\
+│ ├── sample2.wav\
+│ └── ...\
 └── ...
 
 - Ensure that the audio files are in a compatible format (e.g., WAV, MP3).
@@ -116,7 +116,6 @@ The training process involves the following steps:
 3.  **Optimization:** Using an optimization algorithm (e.g., Adam, SGD) to minimize the loss function.
 4.  **Validation:** Evaluating the model's performance on a validation set.
 
-- Training parameters such as learning rate, batch size, and number of epochs can be configured in the `config.yaml` file.
 - Monitor the training progress using the provided scripts and adjust parameters as needed.
 
 ## Evaluation
