@@ -2,6 +2,7 @@
 
 [![GitHub Issues](https://img.shields.io/github/issues/dattanirjhar/multiclass-voice-recog)](https://github.com/dattanirjhar/multiclass-voice-recog/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/pulls/dattanirjhar/multiclass-voice-recog)](https://github.com/dattanirjhar/multiclass-voice-recog/pulls)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/maintenance/yes/2025)](https://github.com/dattanirjhar/multiclass-voice-recog/graphs/commit-activity)
 
 ## Overview
@@ -26,7 +27,6 @@ This repository hosts a multiclass voice recognition project, enabling the class
 - [Model Architecture](#model-architecture)
 - [Training](#training)
 - [Evaluation](#evaluation)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -85,3 +85,48 @@ This repository hosts a multiclass voice recognition project, enabling the class
 ## Dataset
 
 The project requires a structured dataset with audio samples organized into categories. Each category should have its own directory containing the corresponding audio files.
+
+dataset/ ├── category1/ │ ├── sample1.wav │ ├── sample2.wav │ └── ... ├── category2/ │ ├── sample1.wav │ ├── sample2.wav │ └── ... └── ...
+
+- Ensure that the audio files are in a compatible format (e.g., WAV, MP3).
+- Update the `config.yaml` file with the correct paths to your dataset.
+
+## Model Architecture
+
+A detailed description of the model architecture, including layers, activation functions, and key parameters.
+
+- **Feature Extraction:** Describe the audio feature extraction techniques used (e.g., MFCC, Spectrogram).
+- **Model Type:** Specify the type of neural network used (e.g., CNN, RNN, Transformer).
+- **Layer Configuration:** Provide details on the number and types of layers.
+
+## Training
+
+The training process involves the following steps:
+
+1.  **Data Loading:** Loading the dataset and preprocessing the audio samples.
+2.  **Model Definition:** Defining the neural network architecture.
+3.  **Optimization:** Using an optimization algorithm (e.g., Adam, SGD) to minimize the loss function.
+4.  **Validation:** Evaluating the model's performance on a validation set.
+
+- Training parameters such as learning rate, batch size, and number of epochs can be configured in the `config.yaml` file.
+- Monitor the training progress using the provided scripts and adjust parameters as needed.
+
+## Evaluation
+
+The model's performance is evaluated using metrics such as:
+
+- **Accuracy**- 0.97
+- **Precision**- 0.97
+- **Recall**- 0.96
+- **F1-Score**- 0.96
+
+Evaluation scripts are provided to assess the model's effectiveness on a test dataset.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- This project was inspired by advancements in machine learning and voice recognition technologies.
+- Special thanks to the open-source community for providing valuable resources and tools.
