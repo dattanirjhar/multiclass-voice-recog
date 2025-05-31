@@ -85,10 +85,19 @@ This repository hosts a multiclass voice recognition project, enabling the class
 
 The project requires a structured dataset with audio samples organized into categories. Each category should have its own directory containing the corresponding audio files.
 
-dataset/ ├── category1/ │ ├── sample1.wav │ ├── sample2.wav │ └── ... ├── category2/ │ ├── sample1.wav │ ├── sample2.wav │ └── ... └── ...
+dataset/
+├──category1/
+│ ├── sample1.wav
+│ ├── sample2.wav
+│ └── ...
+├── category2/
+│ ├── sample1.wav
+│ ├── sample2.wav
+│ └── ...
+└── ...
 
 - Ensure that the audio files are in a compatible format (e.g., WAV, MP3).
-- Update the `config.yaml` file with the correct paths to your dataset.
+
 
 ## Model Architecture
 
