@@ -1,7 +1,6 @@
 # Multiclass Voice Recognition
 
 [![GitHub Issues](https://img.shields.io/github/issues/dattanirjhar/multiclass-voice-recog)](https://github.com/dattanirjhar/multiclass-voice-recog/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/pulls/dattanirjhar/multiclass-voice-recog)](https://github.com/dattanirjhar/multiclass-voice-recog/pulls)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/maintenance/yes/2025)](https://github.com/dattanirjhar/multiclass-voice-recog/graphs/commit-activity)
 
