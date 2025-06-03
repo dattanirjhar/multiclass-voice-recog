@@ -109,7 +109,7 @@ The training process involves the following steps:
 1.  **Data Loading:** Loading the dataset and preprocessing the audio samples and splitting into training and testing sets.
 2.  **Model Definition:** Defining and calling the SVM model from **scikit-learn** library.
 3. **Model Training:** After definition, we fit the training set on the model and train it.
-4.  **Predictionton:** After training, we predict values(classes) on the test set.
+4.  **Prediction:** After training, we predict values(classes) on the test set.
 
 - Monitor the training progress using the provided scripts and adjust parameters as needed.
 
