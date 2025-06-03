@@ -98,7 +98,6 @@ dataset/\
 
 - Ensure that the audio files are in a compatible format (e.g., WAV, MP3).
 
-
 ## Model Architecture
 
 A detailed description of the model architecture, including layers, activation functions, and key parameters.
@@ -122,10 +121,10 @@ The training process involves the following steps:
 
 The model's performance is evaluated using metrics such as:
 
-- **Accuracy**- 0.97
-- **Precision**- 0.97
-- **Recall**- 0.96
-- **F1-Score**- 0.96
+- **Accuracy**- 0.95
+- **Precision**- 0.95
+- **Recall**- 0.95
+- **F1-Score**- 0
 
 Evaluation scripts are provided to assess the model's effectiveness on a test dataset.
 
