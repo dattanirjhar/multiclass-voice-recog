@@ -69,17 +69,13 @@ This repository hosts a multiclass voice recognition project, enabling the class
 
 2.  **Model Training:**
 
-    ```bash
-    python train.py --config config.yaml
-    ```
-
-    - Modify the `config.yaml` file to adjust training parameters as needed.
+    Update the directory path (for dataset) in the Notebook(s). 
+    After the files get loaded, the script will split and train the model with the new dataset.
+    The rest cells will need to be run inorder to train the model.
 
 3.  **Inference/Prediction:**
 
-    ```bash
-    python predict.py --audio_file path/to/your/audio.wav --model_path path/to/trained/model.pth
-    ```
+    Run the required cells in the notebook to predict values based on the test split.
 
 ## Dataset
 
@@ -97,23 +93,23 @@ dataset/\
 └── ...
 
 - Ensure that the audio files are in a compatible format (e.g., WAV, MP3).
+- Here we are using seven singers, each of whose vocal samples are colected (an average of 65 to 70 samples per singer)
 
 ## Model Architecture
 
 A detailed description of the model architecture, including layers, activation functions, and key parameters.
 
 - **Feature Extraction:** Describe the audio feature extraction techniques used (e.g., MFCC, Spectrogram).
-- **Model Type:** Specify the type of neural network used (e.g., CNN, RNN, Transformer).
-- **Layer Configuration:** Provide details on the number and types of layers.
+- **Model Type:** We use an SVM model here, with a Linear Kernel, and OVR decision function.
 
 ## Training
 
 The training process involves the following steps:
 
-1.  **Data Loading:** Loading the dataset and preprocessing the audio samples.
-2.  **Model Definition:** Defining the neural network architecture.
-3.  **Optimization:** Using an optimization algorithm (e.g., Adam, SGD) to minimize the loss function.
-4.  **Validation:** Evaluating the model's performance on a validation set.
+1.  **Data Loading:** Loading the dataset and preprocessing the audio samples and splitting into training and testing sets.
+2.  **Model Definition:** Defining and calling the SVM model from **scikit-learn** library.
+3. **Model Training:** After definition, we fit the training set on the model and train it.
+4.  **Prediciton:** After training, we predict values(classes) on the test set.
 
 - Monitor the training progress using the provided scripts and adjust parameters as needed.
 
@@ -124,7 +120,7 @@ The model's performance is evaluated using metrics such as:
 - **Accuracy**- 0.95
 - **Precision**- 0.95
 - **Recall**- 0.95
-- **F1-Score**- 0
+- **F1-Score**- 0.95
 
 Evaluation scripts are provided to assess the model's effectiveness on a test dataset.
 
