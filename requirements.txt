@@ -3,4 +3,3 @@ librosa
 numpy
 matplotlib
 scikit-learn
-os
